@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "My Cool Extension",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["jquery-1.11.3.min.js", "test.js", "client.js"]
+    }
+  ],
+  "background": {
+	"scripts": ["jquery-1.11.3.min.js","/js/preferences.js","client.js","background.js"]
+  },
+
+  "optional_permissions": [  ],
+  "options_page": "/html/options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "/html/options.html"
+  },
+
+  "browser_action": {
+    "default_popup": "/html/popup.html"
+  },
+  "permissions": [ "contextMenus", "activeTab", "tabs", "alarms", "cookies", "notifications", "storage", "http://*/*", "https://*/*", "*://*/*" ]
+
+}

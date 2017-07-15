@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="../jquery-1.11.3.min.js"></script>
+    <script src="../test.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body class="thirdlane-extension">
+<div class="panel dialpad dialpad-sm">
+    <div class="panel-body">
+
+        <div id="softphone">
+            <div class="form-group">
+                <label for="phone_number_input" class="hidden">Phone number</label>
+                <input type="text" class="form-control" id="phone_number_input"/>
+            </div>
+
+            <div class="dialpad-buttons text-center">
+                <div>
+                    <button class="dialpad-button" data-value="1">
+                        <span class="digit">1</span>
+                    </button>
+                    <button class="dialpad-button" data-value="2">
+                        <span class="digit">2</span>
+                    </button>
+                    <button class="dialpad-button" data-value="3">
+                        <span class="digit">3</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="dialpad-button" data-value="4">
+                        <span class="digit">4</span>
+                    </button>
+                    <button class="dialpad-button" data-value="5">
+                        <span class="digit">5</span>
+                    </button>
+                    <button class="dialpad-button" data-value="6">
+                        <span class="digit">6</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="dialpad-button" data-value="7">
+                        <span class="digit">7</span>
+                    </button>
+                    <button class="dialpad-button" data-value="8">
+                        <span class="digit">8</span>
+                    </button>
+                    <button class="dialpad-button" data-value="9">
+                        <span class="digit">9</span>
+                    </button>
+                </div>
+                <div>
+                    <button class="dialpad-button" data-value="*">
+                        <span class="digit">*</span>
+                    </button>
+                    <button class="dialpad-button" data-value="0">
+                        <span class="digit">0</span>
+                    </button>
+                    <button class="dialpad-button" data-value="#">
+                        <span class="digit">#</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group text-center">
+                  <button id="make-call" class="btn btn-primary" i18n="dlg_btn_call"> Call </button>
+            </div>
+            <div class="form-group text-center">
+                  <button type="button" class="btn btn-primary btn-outline"  type="button" id="make-connection"> Connect </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
